@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Login - Yaatrishil</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/login.css')}}">
+    <link rel="icon" type="image/gif/png" href="{{url_for('static',filename='css/plane1.png')}}">
+
+    <script src ="{{url_for('static',filename='css/login.js')}}"></script>
+    <nav class="navigation">
+         <a href="/home">Home</a>
+         <a href="/about">About</a>
+         <a href="/flight">Flight</a>
+         <a href="/contact">Contact</a>
+    </nav>
+  </head>
+
+  <body>
+    
+
+
+
+   <div class="center">
+      <h1>Login</h1>
+      <form method="post" action="/login">
+        <div class="txt_field">
+          <input type="text" id="email" name="email" required >
+          
+          <label>Email-id</label>
+        </div>
+        <div class="txt_field" action="/login">
+          <input type="password" id="password" name="password" required >
+        
+          <label>Password</label>
+          
+        </div >
+        <input type="submit" value="Login"><br><br>
+        <div class="signup_link"><center><h4>New User?<br><a href="/signup">Sign Up</a> </h4></center></div>
+        </div>
+
+        
+      </form>
+      
+    </div>
+
+  </body>
+</html>

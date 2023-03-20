@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    
+ <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Home</title>
+       <link rel="stylesheet" href="{{url_for('static',filename='css/main.css')}}">
+       <link rel="icon" type="image/gif/png" href="{{url_for('static',filename='css/plane1.png')}}">
+       <!-- <script src ="{{url_for('static',filename='css/login.js')}}"></script> -->
+       <nav class="navigation">
+         <a href="/home">Home</a>
+         <a href="/about">About</a>
+         <a href="/flight">Flight</a>
+         <a href="/contact">Contact</a>
+       </nav>
+       <style>
+        th{
+          padding-left: 20px;
+        }
+       </style>
+ </head>
+ <body>
+  <h1 class="header"> Pick a place...</h1>
+ <table class="table"> 
+   <thead>
+     <tr>
+       <form class="form" action="/Home method="post">
+          <th><div class="card">
+            <input type="text" name="source" placeholder="Source?">
+          </div></th>
+          <th><div class="card">
+            <input type="text" name="Destination" placeholder="Destination?">
+          </div></th>
+          <th><div class="card">
+            <input type="date" name="Date" placeholder="Date">
+          </div></th>
+          <th>
+            <input type="submit" class="icon" name="Search" value="Search">
+          </th>
+       </form>
+      </tr> 
+    </thead>   
+ </table>   
+    
+ </body>
+</html>

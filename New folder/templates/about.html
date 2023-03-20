@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    
+ <head>
+       <meta charset="UTF-8">
+       <title>Home</title>
+       <link rel="stylesheet" href="{{url_for('static',filename='css/main.css')}}">
+       <link rel="icon" type="image/gif/png" href="{{url_for('static',filename='css/plane1.png')}}">
+       <!-- <script src ="{{url_for('static',filename='css/login.js')}}"></script> -->
+       <nav class="navigation">
+         <a href="/home">Home</a>
+         <a href="/about">About</a>
+         <a href="/flight">Flight</a>
+         <a href="/contact">Contact</a>
+       </nav>
+       <style>
+        th{
+          padding-left: 20px;
+        }
+       </style>
+ </head>
+ <body>
+   <img class="hi" src="{{url_for('static',filename='css/text.png')}}">
+   <img class="hello" src="{{url_for('static',filename='css/img.png')}}">
+
+ </body>
+</html>

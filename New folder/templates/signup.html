@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Sign Up - Yaatrishil</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/signup.css')}}">
+    <link rel="icon" type="image/gif/png" href="{{url_for('static',filename='css/plane1.png')}}">
+
+    <script src ="{{url_for('static',filename='css/login.js')}}"></script>
+    <nav class="navigation">
+         <a href="/home">Home</a>
+         <a href="/about">About</a>
+         <a href="/flight">Flight</a>
+         <a href="/contact">Contact</a>
+    </nav>
+  </head>
+
+  <body>
+    
+
+
+ <body>
+    <div class="center">
+      <h1>Sign Up</h1>
+      <form method="post" action="signup">
+        
+        <div class="txt_field" action="signup">
+          <input type="email" id="email" name="email" required >
+          <span></span>
+          <label>Email-id</label>
+        </div>
+        <div class="txt_field">
+          <input type="text"  id="name" name="name" required>
+          <span></span>
+          <label>Name</label>
+        </div>
+        <div class="txt_field">
+          <input type="text"  id="number" name="number" required>
+          <span></span>
+          <label>Number</label>
+        </div>
+        <div class="txt_field" action="signup">
+          <input type="password"  id="password" name="password" required>
+          <span></span>
+          <label>Password</label>
+          
+        </div>
+        <input type="submit" value="Sign Up" onclick="validate()"><br><br>
+        <div class="signup_link"><center><h4>Alread User?<br><a href="/login">Login </a> </h4></center></div>
+      
+      </form>
+    </div>
+
+  </body>
+</html>
